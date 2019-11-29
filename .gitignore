@@ -6,3 +6,5 @@
 
 # Ignore idea files
 .idea/*
+
+build/
