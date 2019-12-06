@@ -1,12 +1,15 @@
 import org.junit.Test;
 
+import java.util.List;
+
 import static org.junit.Assert.*;
 
 public class BoardTest {
     @Test
     public void hasABoard() {
         Board board = new Board();
-        assertEquals("This is board.", board.getBoard());
+        List currentGrid = board.getBoard();
+        assertEquals(9, currentGrid.size());
     }
 
     @Test
